@@ -3,7 +3,7 @@ import { HydratedDocument } from 'mongoose';
 
 export type ItemsDocument = HydratedDocument<Items>;
 
-@Schema({ timestamps: true})
+@Schema({ timestamps: true })
 export class Items {
   @Prop()
   id_order: number;
