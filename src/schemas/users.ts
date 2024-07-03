@@ -5,22 +5,22 @@ export type UsersDocument = HydratedDocument<Users>;
 
 @Schema({ timestamps: true, collection: 'users' })
 export class Users {
-  @Prop()
+  @Prop({required: true, unique: true})
   user_name: string;
 
-  @Prop()
+  @Prop({required: true})
   password: string;
 
-  @Prop()
+  @Prop({required: true})
   name: string;
 
-  @Prop()
+  @Prop({required: true})
   phone: number;
 
-  @Prop()
+  @Prop({required: true})
   address: string;
 
-  @Prop()
+  @Prop({default: '1'})
   role: string;
 }
 
