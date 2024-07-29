@@ -9,6 +9,7 @@ import { CategoryModule } from './modules/category/category.module';
 import { ServiceModule } from './modules/service/service.module';
 import { RatingModule } from './modules/rating/rating.module';
 import { ItemModule } from './modules/item/item.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ItemModule } from './modules/item/item.module';
     ServiceModule,
     RatingModule,
     ItemModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
